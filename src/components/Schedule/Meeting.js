@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import { data } from "../data/dataMeeting";
+import { data } from "../../data/dataMeeting";
 import Dropdown from "react-bootstrap/Dropdown";
 
 const Meeting = () => {

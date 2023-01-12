@@ -1,9 +1,10 @@
 @import url("./styles/DashboardApp.css");
 @import url("./styles/Navigation.css");
-@import url("./styles/CardDesign.css");
-@import url("./styles/NavTab.css");
-@import url("./styles/Header.css");
-@import url("./styles/Progress.css");
+@import url("./styles/Schedule/CardDesign.css");
+@import url("./styles/Schedule/NavTab.css");
+@import url("./styles/Schedule/Header.css");
+@import url("./styles/Schedule/Progress.css");
+@import url("./styles/Profile/Header.css");
 @import url("./styles/components/avatar.css");
 @import url("./styles/components/search.css");
 @import url("./styles/components/diamond.css");

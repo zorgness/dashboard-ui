@@ -1,7 +1,7 @@
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import { data } from "../data/dataProgress";
+import { data } from "../../data/dataProgress";
 
 const Progress = () => {
   ChartJS.register(ArcElement, Tooltip, Legend);

@@ -1,11 +1,11 @@
 import React from "react";
-import CardFiles from "./Cards/CardFiles";
-import { data } from "../data/dataFiles";
-import { importAll } from "../utils/importAll";
+import CardFiles from "../Cards/CardFiles";
+import { data } from "../../data/dataFiles";
+import { importAll } from "../../utils/importAll";
 
 const Files = () => {
   const iconsImg = importAll(
-    require.context("../icons", false, /\.(png|jpe?g|svg)$/)
+    require.context("../../icons", false, /\.(png|jpe?g|svg)$/)
   );
 
   return (

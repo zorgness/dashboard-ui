@@ -1,6 +1,6 @@
 import React from "react";
-import CardDesign from "./Cards/CardDesign";
-import { data } from "../data/dataDesign";
+import CardDesign from "../Cards/CardDesign";
+import { data } from "../../data/dataDesign";
 
 const Design = () => {
   return (

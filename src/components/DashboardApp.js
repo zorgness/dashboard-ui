@@ -1,38 +1,23 @@
 import React from "react";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import ContentLeft from "./ContentLeft";
-import ContentRight from "./ContentRight";
-import Header from "./Header";
-import Navigation from "./Navigation";
-import Search from "./Search";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Chat from "./Chat/Chat";
+import Overview from "./Overview/Overview";
+import Profile from "./Profile/Profile";
+import Schedule from "./Schedule/Schedule";
+import Settings from "./Settings/Settings";
 
-const OndiloApp = () => {
+const DashboardApp = () => {
   return (
-    <div className="d-flex">
-      <Navigation />
-
-      <Container>
-        <Row className="header-row" lg={2}>
-          <Col className="content-left">
-            <Header />
-          </Col>
-          <Col className="content-right">
-            <Search />
-          </Col>
-        </Row>
-        <Row lg={2}>
-          <Col className="content-left">
-            <ContentLeft />
-          </Col>
-          <Col className="content-right">
-            <ContentRight />
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Profile />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/overview" element={<Overview />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
-export default OndiloApp;
+export default DashboardApp;

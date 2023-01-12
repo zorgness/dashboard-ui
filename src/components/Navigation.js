@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const expand = "lg";
@@ -32,30 +33,34 @@ function Navigation() {
                 className="justify-content-end flex-column flex-grow-1 pe-3 gap-3"
                 style={{ marginTop: "80px" }}
               >
-                <Nav.Link href="#action1">
-                  <i className="fa-solid fa-user fa-fw"></i>
+                <Link className="nav-link" to="/">
+                  <i className="fa-solid fa-user fa-fw"></i>{" "}
                   <span className="mx-1">Profile</span>
-                </Nav.Link>
-                <Nav.Link href="#action2">
+                </Link>
+                <Link className="nav-link" to="/schedule">
                   <i className="fa-solid fa-calendar-days fa-fw"></i>{" "}
                   <span className="mx-1">Schedule</span>
-                </Nav.Link>
-                <Nav.Link href="#action3">
+                </Link>
+                <Link className="nav-link" to="/overview">
                   <i className="fa-solid fa-chart-column fa-fw"></i>{" "}
                   <span className="mx-1">Overview</span>
-                </Nav.Link>
-                <Nav.Link href="#action4">
+                </Link>
+                <Link className="nav-link" to="/chat">
                   <i className="fa-brands fa-rocketchat fa-fw"></i>{" "}
                   <span className="mx-1">Chat</span>
-                </Nav.Link>
-                <Nav.Link href="#action5">
+                </Link>
+                <Link className="nav-link" to="/settings">
                   <i className="fa-solid fa-gear fa-fw"></i>{" "}
                   <span className="mx-1">Settings</span>
-                </Nav.Link>
-                <Nav.Link href="#action6" style={{ marginTop: "200px" }}>
+                </Link>
+                <Link
+                  className="nav-link"
+                  to="/"
+                  style={{ marginTop: "200px" }}
+                >
                   <i className="fa-solid fa-right-from-bracket fa-fw"></i>{" "}
                   <span className="mx-1">Logout</span>
-                </Nav.Link>
+                </Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

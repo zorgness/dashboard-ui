@@ -1,0 +1,32 @@
+.profile-header-container {
+  height: 280px;
+}
+.profile-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-profile-container {
+  position: absolute;
+  margin-left: 24px;
+  top: 160px;
+}
+
+@media (max-width: 992px) {
+  .profile-header {
+    display: none;
+  }
+  .avatar-profile-container {
+    display: none;
+  }
+}
