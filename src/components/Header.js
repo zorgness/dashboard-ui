@@ -1,11 +1,11 @@
 import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <div className="d-flex justify-content-between align-items-baseline mx-4 mt-4 mb-1">
       <div>
-        <h2 className="header-label">Schedule</h2>
+        <h2 className="header-label">{title}</h2>
       </div>
 
       <div>

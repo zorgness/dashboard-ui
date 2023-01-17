@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,6 +7,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   const expand = "lg";
+
   return (
     <>
       <Navbar key={expand} variant="dark" expand={expand} className="mb-3">
@@ -41,11 +43,11 @@ function Navigation() {
                   <i className="fa-solid fa-calendar-days fa-fw"></i>{" "}
                   <span className="mx-1">Schedule</span>
                 </Link>
-                <Link className="nav-link" to="/overview">
+                <Link className="nav-link" to="/overview" id="Overview">
                   <i className="fa-solid fa-chart-column fa-fw"></i>{" "}
                   <span className="mx-1">Overview</span>
                 </Link>
-                <Link className="nav-link" to="/chat">
+                <Link className="nav-link" to="/chat" id="Chat">
                   <i className="fa-brands fa-rocketchat fa-fw"></i>{" "}
                   <span className="mx-1">Chat</span>
                 </Link>

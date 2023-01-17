@@ -1,24 +1,30 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Layout from "../../layout/Layout";
-import Header from "./Header";
+import InfoBlock from "./InfoBlock";
+import Report from "./Report";
+import Performance from "./Performance";
 
 const Profile = () => {
   return (
     <Layout>
-      <Container style={{ padding: "0px" }}>
-        <Row>
-          <Col>
-            <Header />
-          </Col>
-        </Row>
-
-        <Row>
-          <Col>
-            <div className="m-4">Profile</div>
-          </Col>
-        </Row>
-      </Container>
+      <Row lg={2}>
+        <Col className="content-left bg-danger">
+          <InfoBlock />
+        </Col>
+        <Col className="content-right bg-info">
+          <Row>
+            <div>
+              <Performance />
+            </div>
+          </Row>
+          <Row>
+            <div>
+              <Report />
+            </div>
+          </Row>
+        </Col>
+      </Row>
     </Layout>
   );
 };

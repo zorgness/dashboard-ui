@@ -5,7 +5,7 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 220px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,19 +14,20 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 0 0;
 }
 
 .avatar-profile-container {
   position: absolute;
-  margin-left: 24px;
-  top: 160px;
+
+  top: 80px;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .profile-header {
     display: none;
   }
   .avatar-profile-container {
     display: none;
   }
-}
+} */
