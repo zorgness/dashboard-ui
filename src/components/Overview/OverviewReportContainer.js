@@ -4,7 +4,7 @@ import OverviewReport from "./OverviewReport";
 
 const OverviewReportContainer = () => {
   return (
-    <div className="d-flex justify-content-between flex-wrap m-4">
+    <div className="d-flex justify-content-between flex-wrap m-4 p-3 gap-3 bg-light border">
       {data.map((data) => {
         return <OverviewReport key={data.id} data={data} />;
       })}

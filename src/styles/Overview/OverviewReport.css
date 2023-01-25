@@ -1,0 +1,13 @@
+.overview-report {
+  background: #fff;
+}
+.overview-report h2 {
+  color: rgba(82, 122, 252);
+}
+.overview-report:hover {
+  background: rgba(82, 122, 252);
+  color: white;
+}
+.overview-report:hover > h2 {
+  color: turquoise;
+}

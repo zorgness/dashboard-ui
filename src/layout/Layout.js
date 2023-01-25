@@ -19,10 +19,10 @@ const Layout = ({ children }) => {
 
       <Container className="d-flex flex-column">
         <Row className="header-row" lg={2}>
-          <Col className="content-left bg-warning">
+          <Col className="content-left">
             <Header title={title} />
           </Col>
-          <Col className="content-right bg-success">
+          <Col className="content-right">
             <Search />
           </Col>
         </Row>
