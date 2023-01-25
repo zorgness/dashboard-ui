@@ -9,16 +9,16 @@ const Overview = () => {
   return (
     <Layout>
       <Row>
-        <Col className="bg-danger">
+        <Col className="">
           <OverviewCardContainer />
         </Col>
       </Row>
       <Row lg={2}>
-        <Col className="bg-info content-left">
+        <Col className="content-left">
           <OverviewProgressContainer />
         </Col>
 
-        <Col className="bg-dark content-right">
+        <Col className="content-right">
           <OverviewReportContainer />
         </Col>
       </Row>

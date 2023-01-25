@@ -1,0 +1,21 @@
+.card-overview:nth-child(1) {
+  background: linear-gradient(
+    45deg,
+    rgba(252, 153, 82, 1) 38%,
+    rgba(250, 29, 253, 1) 100%
+  ) !important;
+}
+.card-overview:nth-child(2) {
+  background: linear-gradient(
+    43deg,
+    rgba(253, 29, 176, 1) 38%,
+    rgba(107, 82, 252, 1) 100%
+  ) !important;
+}
+.card-overview:nth-child(3) {
+  background: linear-gradient(
+    43deg,
+    rgba(29, 253, 209, 1) 38%,
+    rgba(82, 122, 252, 1) 100%
+  ) !important;
+}
