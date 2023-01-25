@@ -1,25 +1,22 @@
-import React from 'react'
-import Card from 'react-bootstrap/Card';
+import React from "react";
+import Card from "react-bootstrap/Card";
 
-const CardOverview = () => {
+const CardOverview = ({ data }) => {
+  const { title, total, period } = data;
   return (
     <Card
-    bg={ 'primary'}
+      bg={"primary"}
+      text={"white"}
+      style={{ width: "15rem" }}
+      className="mb-2"
+    >
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>{total}</Card.Text>
+        <Card.Text>{period}</Card.Text>
+      </Card.Body>
+    </Card>
+  );
+};
 
-    text={'white'}
-    style={{ width: '18rem' }}
-    className="mb-2"
-  >
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>{ 'primary'} Card Title </Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  )
-}
-
-export default CardOverview
+export default CardOverview;
