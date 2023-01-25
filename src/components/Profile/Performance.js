@@ -11,6 +11,9 @@ const Performance = () => {
         <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text>
+        <div className="mb-2">
+          <ProgressBar animated now={45} />
+        </div>
         <div>
           <ProgressBar animated now={45} />
         </div>
