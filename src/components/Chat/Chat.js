@@ -1,12 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Layout from "../../layout/Layout";
+import InProgress from "../../InProgress";
 
 const Chat = () => {
   return (
     <Layout>
       <Container>
-        <div className="m-4">Profile</div>
+        <InProgress />
       </Container>
     </Layout>
   );
