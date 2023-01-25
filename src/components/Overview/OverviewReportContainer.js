@@ -4,11 +4,11 @@ import OverviewReport from "./OverviewReport";
 
 const OverviewReportContainer = () => {
   return (
-    <>
+    <div className=" bg-danger d-flex justify-content-between flex-wrap m-4">
       {data.map((data) => {
         return <OverviewReport key={data.id} data={data} />;
       })}
-    </>
+    </div>
   );
 };
 
