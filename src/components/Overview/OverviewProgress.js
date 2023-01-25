@@ -30,7 +30,7 @@ const OverviewProgress = ({ data }) => {
 
               // Colors
               pathColor: `rgba(${color})`,
-              textColor: "black",
+
               trailColor: "#d6d6d6",
             })}
           />

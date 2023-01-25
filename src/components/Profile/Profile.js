@@ -9,10 +9,10 @@ const Profile = () => {
   return (
     <Layout>
       <Row lg={2}>
-        <Col className="content-left bg-danger">
+        <Col className="content-left ">
           <InfoBlock />
         </Col>
-        <Col className="content-right bg-info">
+        {/* <Col className="content-right ">
           <Row>
             <div>
               <Performance />
@@ -23,7 +23,7 @@ const Profile = () => {
               <Report />
             </div>
           </Row>
-        </Col>
+        </Col> */}
       </Row>
     </Layout>
   );

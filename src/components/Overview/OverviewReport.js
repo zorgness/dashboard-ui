@@ -7,7 +7,9 @@ const OverviewReport = ({ data }) => {
       style={{ width: "280px", height: "132px" }}
       className="border rounded overview-report"
     >
-      <h2 className="mx-4 mt-4">{total}</h2>
+      <h2 className="mx-4 mt-4">
+        {total} <i class="fa-solid fa-globe text-white mx-4"></i>
+      </h2>
       <p className="mx-4">{title}</p>
     </div>
   );

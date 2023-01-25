@@ -7,15 +7,13 @@ const Performance = () => {
     <Card className="m-4">
       <Card.Header>Featured</Card.Header>
       <Card.Body>
-        <Card.Title>Special title treatment</Card.Title>
-        <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
+        <Card.Title></Card.Title>
+        <Card.Text></Card.Text>
         <div className="mb-2">
           <ProgressBar animated now={45} />
         </div>
         <div>
-          <ProgressBar animated now={45} />
+          <ProgressBar animated now={78} />
         </div>
       </Card.Body>
     </Card>

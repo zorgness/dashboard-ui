@@ -1,5 +1,30 @@
+.overview-progress-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.overview-progress:hover {
+  background: black;
+  color: white;
+}
+
+.overview-progress:hover > .CircularProgressbar-text {
+  color: white !important;
+}
+
+.CircularProgressbar-text {
+  color: white !important;
+}
 .overview-progress {
   width: 200px;
   height: 300px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .overview-progress-container {
+    justify-content: center;
+  }
 }
