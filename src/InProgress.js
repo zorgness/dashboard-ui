@@ -7,7 +7,7 @@ const InProgress = () => {
       style={{ height: "80vh" }}
     >
       <div>
-        <h1>Comming Soon</h1>
+        <h1>Coming Soon</h1>
       </div>
       <div>
         <h2>In Progress</h2>
