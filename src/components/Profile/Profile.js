@@ -12,18 +12,18 @@ const Profile = () => {
         <Col className="content-left ">
           <InfoBlock />
         </Col>
-        {/* <Col className="content-right ">
-          <Row>
+        <Col className="content-right ">
+          {/* <Row>
             <div>
               <Performance />
             </div>
-          </Row>
+          </Row> */}
           <Row>
             <div>
               <Report />
             </div>
           </Row>
-        </Col> */}
+        </Col>
       </Row>
     </Layout>
   );
