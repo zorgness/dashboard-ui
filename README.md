@@ -4,7 +4,7 @@ Dashboard front-end
 
 React Js, Bootstrap, font-awesome
 
-https://bejewelled-sherbet-c04f98.netlify.app/
+https://dashboard-ui-zorgness.vercel.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
