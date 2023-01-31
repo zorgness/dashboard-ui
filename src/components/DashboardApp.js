@@ -1,21 +1,28 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "./ErrorFallback";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Chat from "./Chat/Chat";
-import Overview from "./Overview/Overview";
-import Profile from "./Profile/Profile";
-import Schedule from "./Schedule/Schedule";
-import Settings from "./Settings/Settings";
+import Loader from "./Loader";
+const Chat = lazy(() => import("./Chat/Chat"));
+const Overview = lazy(() => import("./Overview/Overview"));
+const Profile = lazy(() => import("./Profile/Profile"));
+const Settings = lazy(() => import("./Settings/Settings"));
+const Schedule = lazy(() => import("./Schedule/Schedule"));
 
 const DashboardApp = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Profile />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/overview" element={<Overview />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <Routes>
+            <Route path="/" element={<Profile />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/overview" element={<Overview />} />
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </ErrorBoundary>
+      </Suspense>
     </BrowserRouter>
   );
 };

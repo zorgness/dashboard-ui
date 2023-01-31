@@ -8,7 +8,7 @@ const OverviewReport = ({ data }) => {
       className="border rounded overview-report"
     >
       <h2 className="mx-4 mt-4">
-        {total} <i class="fa-solid fa-globe text-white mx-4"></i>
+        {total} <i className="fa-solid fa-globe text-white mx-4"></i>
       </h2>
       <p className="mx-4">{title}</p>
     </div>

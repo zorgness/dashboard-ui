@@ -4,7 +4,7 @@ const InfoBlockHeader = () => {
   return (
     <div className="profile-header-container">
       <div
-        class="profile-header"
+        className="profile-header"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://static.vecteezy.com/system/resources/previews/010/821/420/original/liquid-flow-holographic-pink-3d-neon-lava-lamp-geometric-background-for-banner-card-ui-design-or-wallpaper-gradient-mesh-bubble-in-the-shape-of-a-wave-drop-fluid-colorful-abstract-shapes-free-vector.jpg)`,
         }}

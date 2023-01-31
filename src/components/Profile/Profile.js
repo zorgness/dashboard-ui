@@ -1,9 +1,8 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Layout from "../../layout/Layout";
 import InfoBlock from "./InfoBlock";
 import Report from "./Report";
-import Performance from "./Performance";
 
 const Profile = () => {
   return (
